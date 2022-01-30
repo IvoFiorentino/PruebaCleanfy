@@ -1,0 +1,279 @@
+/* PRODUCT DETAIL */
+.productDetailBody {
+    /* background-color: black; */
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .mainProductDetail {
+    padding: 80px 0px 0px 0px;
+    text-align: center;
+    width: 100vw;
+    height: 80vw;
+    /* background-color: yellow; */
+  }
+
+  .productTittleContainer {
+    text-align: left;
+    /* border: red solid; */
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .productTittle{
+    align-items: center;
+    text-align: left;
+    font-size: 3vh;
+  }
+
+  .productPictureContainer {
+    text-align: center;
+    /* border: red solid; */
+    padding: 2%;
+    margin: 2%;
+    background-color: white;
+    height: 20vh;
+  }
+
+  .productPicture {
+    padding: 5%;
+    border-image: 5%;
+  }
+
+  .productPriceContainer {
+    text-align: left;
+    /* border: red solid; */
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .productPrice {
+    text-align: left;
+    font-size: 4vh;
+    display: block;
+  }
+
+  .productCuota {
+    text-align: left;
+    font-size: 2vh;
+    display: block;
+  }
+
+  .productPaymentMethodContainer {
+    text-align: left;
+    /* border: red solid; */
+    padding: 2%;
+    margin: 1% 2%;
+  }
+
+  .buttomContainer{
+    /* border: red solid; */
+    margin: 2%;
+  }
+
+  .buttomContainer button {
+    text-align: center;
+    display: block;
+    margin-top: 1%;
+    width: 100%;
+    font-size: 2vh;
+    font-family: 'Handlee', cursive;
+    font-weight: 900;
+  }
+
+  .buyButton {
+    background-color: #3483fa;
+    color: white;
+  }
+
+  .addButton {
+    background-color: rgba(65,137,230,.15);
+    color: #3483fa;
+  }
+
+  .descriptionContainer {
+    text-align: left;
+    /* border: red solid; */
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .descriptionContainer h3 {
+
+  }
+
+  .questionContainer {
+    text-align: left;
+    /* border: red solid; */
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .questionContainer h3 {
+    margin-top: 1%;
+  }
+
+  .questionContainer input{
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  .questionContainer h4 {
+    margin-top: 2%;
+  }
+
+  .descriptionContainer p {
+
+  }
+
+  .question {
+
+  }
+
+  .reply {
+    color: grey;
+  }
+
+/* PRODUCT CREATION */
+.productCreate{
+  width: 300px;
+  padding: 40px;
+  background-color: #4A91F7;
+  text-align: center;
+  border-radius: 18%;
+  border: 1px rgb(100, 224, 255);
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/* PRODUCT CART */
+.productListContainer {
+  background-color: white;
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.productListContainer p{
+  /* background-color: red; */
+  margin: 1%;
+  width: 50%;
+}
+
+.productListContainer input {
+  /* background-color: red; */
+  margin: 1%;
+  border: blue;
+  width: 50%;
+}
+
+.buttomContainerCart{
+  background-color: white;
+  /* border: red solid; */
+  margin: 2%;
+  padding: 2%;
+}
+
+.buttomContainerCart button {
+  text-align: center;
+  display: block;
+  margin-top: 1%;
+  width: 100%;
+  font-size: 4vh;
+  font-family: 'Handlee', cursive;
+  font-weight: 900;
+  height: 10vh;
+}
+
+.buttomContainerCartEnvio{
+  text-align: left;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.buttomContainerCartPrecio{
+  text-align: right;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.bodyregister{
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+
+.cajaregister{
+  width: 410px;
+  padding: 40px;
+  background-color: #4A91F7;
+  text-align: center;
+  border-radius: 18%;
+  border: 1px rgb(100, 224, 255);
+}
+
+.titulo{
+  font-size: 27px;
+}
+
+.cajaregister .formulario .inputbox .input{
+width: 100%;
+outline: none;
+border: 1px solid #d5dbd9;
+font-size: 15px;
+padding: 8px 10px;
+border-radius: 22px;
+transition: all 0.3s ease;
+}
+
+
+.bodyregister .cajaregister .formulario .inputbox,
+.botones{
+border: 0;
+background: none;
+display: flex;
+margin: 20px auto;
+padding: 5px 3px;
+text-align: center;
+border: 2px solid rgb(107, 190, 245);
+width: 253px;
+outline: none;
+color: black;
+border-radius: 22px;
+transition: 360ms;
+font-family: 'arial', cursive;
+font-size: 16;
+}
+
+.bodyregister .cajaregister .formulario .botones button[type="submit"],
+.bodyregister .cajaregister .formulario .botones button[type="reset"],
+.bodyregister .cajaregister .formulario .botones button[type="button"]{
+  border: 0;
+  background: rgb(107, 190, 245);
+  cursor: pointer;
+}
+
+.botones button[type="submit"]:hover,
+.botones button[type="reset"]:hover,
+.botones button[type="button"]:hover{
+  transition: 1111ms;
+  background: none;
+}
+
+.bodyregister .cajaregister .formulario .inputbox[type="text"]:focus,
+.bodyregister .cajaregister .formulario .inputbox[type="text"]:focus,
+.bodyregister .cajaregister .formulario .inputbox[type="password"]:focus,
+.bodyregister .cajaregister .formulario .inputbox[type="password"]:focus,
+.bodyregister .cajaregister .formulario .inputbox[type="email"]:focus,
+.bodyregister .cajaregister .formulario .inputbox[type="text"]:focus,
+.bodyregister .cajaregister .formulario .inputbox[type="text"]:focus{
+  width: 280px;
+  border-color:white;
+
+}

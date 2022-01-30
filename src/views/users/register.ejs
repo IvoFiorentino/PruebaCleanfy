@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/header') %>
+    <ul class="errores"></ul>
+    <form
+      class="formulario"
+      action="/users/profile"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <h4>Crea tu cuenta!</h4>
+      <div class="caja">
+        <label for="NombreApellido"> First Name </label><br /><input class="register" 
+          id="first_name_val"
+          type="text"
+          name="first_name"
+          placeholder="Insert your name"
+          value="<%= locals.old && old.first_name %>"
+        />
+        <% if (locals.errors && errors.first_name) { %>
+        <p class="feedback"><%= errors.first_name.msg %></p>
+        <% } %>
+      </div>
+      <div class="caja">
+        <label for="NombreApellido"> Last Name </label><br /><input class="register" 
+          type="text"
+          id="last_name_val"
+          name="last_name"
+          placeholder="Insert your name"
+          value="<%= locals.old && old.last_name %>"
+        />
+        <% if (locals.errors && errors.last_name) { %>
+        <p class="feedback"><%= errors.last_name.msg %></p>
+        <% } %>
+      </div>
+
+      <div class="caja">
+        <label for="Email">Email</label><br /><input class="register" 
+          type="email"
+          id="email_val"
+          name="email"
+          id="Email"
+          placeholder="Insert your email"
+          value="<%= locals.old && old.email %>"
+        />
+        <% if (locals.errors && errors.email) { %>
+        <p class="feedback"><%= errors.email.msg %></p>
+        <% } %>
+      </div>
+      <div class="caja">
+        <label for="password"> Password</label><br /><input class="register"
+          type="password"
+          name="password"
+          id="password_val"
+          placeholder="Insert your password"
+          value="<%= locals.old && old.password %>"
+        />
+        <% if (locals.errors && errors.password) { %>
+        <p class="feedback"><%= errors.password.msg %></p>
+        <% } %>
+      </div>
+
+      <div class="caja">
+        <label> Profile image: </label> 
+        <br>
+        <input class="register" 
+          type="file"
+          id="image_val"
+          name="image"
+          accept=".jpg, .jpeg, .png"
+        />
+      </div>
+      <div><input class="boton" type="submit" value="Register!" /></div>
+      <div class="tenesCuenta"><a href="/users/login"> ¿Ya eres usuario?</a></div>
+    </form>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

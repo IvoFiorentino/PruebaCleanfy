@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main class="main">
+      <section class="section-html">
+        <h3 class="encuadro">Basado en tu ultima visita o nuevos productos</h3>
+        <!-- HACER UN FOR PARA CADA CARD -->
+
+        <% ultimas.forEach(producto => { %> 
+        <div class="ver">
+          <img
+            class="imagenProducto"
+            src="/img/products/<%= producto.image %> "
+            alt="alt"
+          />
+          <article>
+            <div class="pdp">
+              <p class="precio">$<%= producto.price %></p>
+              <p class="producto"><%= producto.name %></p>
+              <p class="descuento"><%= producto.description %></p>
+            </div>
+          </article>
+        </div>
+        <% }) %>
+      </section>
+      <section class="section-html">
+        <h3 class="encuadro">Novedades de la pagina</h3>
+        <% ofertas.forEach(producto => { %> .
+        <div class="ver">
+          <img
+            class="imagenProducto"
+            src="/img/products/<%= producto.image %> "
+            alt="alt"
+          />
+          <article>
+            <div class="pdp">
+              <p class="precio">$<%= producto.price %></p>
+              <p class="producto"><%= producto.name %></p>
+              <p class="descuento"><%= producto.description %></p>
+            </div>
+          </article>
+        </div>
+        <% }) %>
+      </section>
+    </main>
+  </body>
+</html>

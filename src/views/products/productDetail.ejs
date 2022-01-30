@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/headProduct.ejs') %>
+  <body class="productDetailBody">
+    <main class="mainProductDetail">
+      <section class="productTittleSection">
+        <div class="productTittleContainer">
+          <h3 class="productTittle"><%= producto.name %></h3>
+        </div>
+      </section>
+      <section class="productPictureSection">
+        <div class="productPictureContainer">
+          <img src="/img/products/<%= producto.image %> " alt="<%= producto.name %>" class="">
+        </div>
+      </section>
+      <section class="productPriceSection">
+        <div class="productPriceContainer">
+          <span class="productPrice">$ <%= producto.price %></span>
+          <span class="productCuota"><%= producto.descuento %></span>
+        </div>
+        <div class="productPaymentMethodContainer">
+          <a href="">Ver los medios de pago</a>
+        </div>
+      </section>
+      <section class="buttomSection">
+        <div class="buttomContainer">
+          <button type="submit" class="buyButton">Comprar ahora</button>
+          <button type="submit" class="addButton">Agregar al carrito</button>
+        </div>
+      </section>
+      <hr />
+      <section class="desciptionSection">
+        <div class="descriptionContainer">
+          <h3 class="">Descripcion</h3>
+          <p>
+            <%= producto.description %>
+          </p>
+        </div>
+      </section>
+      <hr />
+    </main>
+  </body>
+</html>

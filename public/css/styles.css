@@ -1,0 +1,616 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header img { 
+    margin-top: 2px;
+    margin-left: 2px;
+    border-radius: 3px;
+}
+
+body {
+    font-family: 'Handlee', cursive;
+    
+    background-color: #f0f0f0;height: 100vh;
+    font-size: 1.0rem;
+}
+
+.header {
+    background: #4A91F7;
+    color: whitesmoke;
+    border-radius: 0 0 3px 3px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 110px;
+    height: 60px;
+    margin-left: 1.5px;
+}
+
+.buscador input {   
+    width: 200px;
+    height: 30px;
+    padding: 0 20px;
+    color: black;
+    outline: none;
+    border-radius: 30px;
+    font-size: 2vh; 
+} 
+
+.container-logo-barra-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.navegador ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+
+.navegador ul li {
+    display: inline-block;
+}
+ 
+ .navegador ul li a {
+    display: block ;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 1.5px;
+ }
+  .navegador ul li a:hover{
+      background: #4763ED;
+      border-radius: 6px;
+  }
+
+  .precio{
+    font-size: 3vh;
+    color: green;
+}
+.producto{
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 2vh;
+    position: center;
+}
+.descuento{
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+}
+.encuadro{
+    padding: 20px 0 0 0;
+    align-items: center;
+    text-align: left;
+    font-size: 4vh;
+    background-color:#4A91F7 ;
+    border-radius: 10px;
+}
+
+
+/* #4A91F7 */
+.ver{
+    width: 350px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #000000;
+}
+
+.pdp{
+    margin-top: 1px solid gray;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.section-html{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 361px) {
+  .descripcion {
+    display: block;
+  }
+  main section article {
+    margin: 10px;
+  }
+  header nav {
+    display: block;
+  }
+  section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  footer {
+    display: none;
+  }
+  .navegador .container-logo-barra-nav ul li {
+    display: none;
+  }
+  .buscador{
+    display: none;
+  }
+  .main{
+    width: 0 auto;
+  }
+  .encuadro{
+    padding: 0%;
+    align-items: center;
+    text-align: center;
+    font-size: 4vh;
+    background-color:#4A91F7 ;
+    border-radius: 10px;
+}
+}
+
+  @media (min-width: 768px){
+    .body-html .section-html{
+        display: flex;
+        flex-direction: column;
+    }
+    .body-html .section-html .ver{
+        width: 46%;
+    }
+
+  }
+
+  @media (min-width: 1280px){
+    .body-html .section-html{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .body-html .section-html .ver{
+        width: 24%;
+    }
+
+  }
+  .main{
+      padding: 93px 8rem 8rem 8rem 
+  }
+
+  /* footer */
+.footer-icons {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  footer p {
+    text-align: center;
+    padding: 10px;
+  }
+  footer h4 {
+    text-align: center;
+    font-weight: bold;
+  }
+  footer {
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 1px solid black;
+}
+/* fin */
+
+.detergentem{
+    width: auto;
+    height: 35vh;
+    padding: 0 163.05 0 163.05
+}
+
+/*MATEO MATEO MATEO*/
+
+.html-login,
+.html-register{
+    height: 99%;
+    font-family: 'Handlee', cursive;
+    
+}
+
+.bodylogin{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SINGIN */
+
+.boxlogin{
+    width: 300px;
+    padding: 40px;
+    background-color: #4A91F7;
+    text-align: center;
+    border-radius: 18%;
+    border: 1px rgb(100, 224, 255);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.boxlogin input[type="text"],
+.boxlogin input[type="password"],
+.boxlogin button[type="submit"],
+.boxlogin button[type="reset"]{
+    border: 0;
+    background: rgb(238, 229, 229);
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #d5dbd9;
+    width: 200px;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    font-size: 2vh;
+}
+
+/*MATEO MATEO MATEO*/
+
+.html-login,
+.html-register{
+    height: 99%;
+    font-family: 'Handlee', cursive;
+    
+}
+
+.bodylogin{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SINGIN */
+
+.boxlogin{
+    width: 300px;
+    padding: 40px;
+    background-color: #4A91F7;
+    text-align: center;
+    border-radius: 18%;
+    border: 1px rgb(100, 224, 255);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.boxlogin input[type="text"],
+.boxlogin input[type="password"],
+.boxlogin button[type="submit"],
+.boxlogin button[type="reset"]{
+    border: 0;
+    background: rgb(238, 229, 229);
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #d5dbd9;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 22px;
+    transition: 360ms;
+    font-family: 'arial', cursive;
+    font-size: 14;
+}
+
+.boxlogin input[type="text"]:focus,
+.boxlogin input[type="password"]:focus{
+    width: 280px;
+    border-color: none;
+}
+
+.boxlogin button[type="submit"],
+.boxlogin button[type="reset"]{
+    border: 0;
+    background: rgb(238, 229, 229);
+    cursor: pointer;
+}
+
+.boxlogin button[type="submit"]:hover,
+.boxlogin button[type="reset"]:hover{
+    transition: 1111ms;
+    background: none;
+}
+
+/* REGISTER */
+
+.bodyregister{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.cajaregister{
+    width: 410px;
+    padding: 40px;
+    background-color: #4A91F7;
+    text-align: center;
+    border-radius: 18%;
+    border: 1px rgb(100, 224, 255);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.titulo{
+    font-size: 27px;
+}
+
+.cajaregister .formulario .inputbox .input{
+width: 100%;
+outline: none;
+border: 1px solid #d5dbd9;
+font-size: 15px;
+padding: 8px 10px;
+border-radius: 22px;
+transition: all 0.3s ease;
+}
+
+
+.bodyregister .cajaregister .formulario .inputbox,
+.todosbotones{
+border: 0;
+background: none;
+display: flex;
+margin: 10px auto;
+padding: 5px 3px;
+text-align: center;
+border: 1px;
+width: 253px;
+outline: none;
+color: black;
+border-radius: 22px;
+transition: 360ms;
+font-size: 16;
+}
+
+.select-register{
+    width: 253px;
+    margin: 9px auto;
+    padding: 5px 3px;
+    background-color: white;
+    border-radius: 18px;
+}
+
+.options-register{
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #9098A9;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+
+.todosbotones button[type="submit"],
+.todosbotones button[type="reset"],
+.todosbotones button[type="button"]{
+border: 2px solid black;
+background: rgb(238, 229, 229);
+display: flex;
+margin: 10px auto;
+padding: 8px 10px;
+text-align: center;
+border: 1px;
+width: 253px;
+outline: none;
+color: black;
+border-radius: 22px;
+transition: 360ms;
+font-size: 15;
+}
+
+
+.todosbotones button[type="submit"]:hover,
+.todosbotones button[type="reset"]:hover,
+.todosbotones button[type="button"]:hover{
+    transition: 1111ms;
+    background: none;
+}
+
+.todosbotones{
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputBox-terms{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+}
+
+/* PRODUCT DETAIL */
+.productDetailBody {
+  /* background-color: black; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainProductDetail {
+  padding: 80px 0px 0px 0px;
+  text-align: center;
+  width: 100vw;
+  height: 80vw;
+  /* background-color: yellow; */
+}
+
+.productTittleContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.productTittle{
+  align-items: center;
+  text-align: left;
+  font-size: 3vh;
+}
+
+.productPictureContainer {
+  text-align: center;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+  background-color: white;
+  height: 20vh;
+}
+
+.productPicture {
+  padding: 5%;
+  border-image: 5%;
+}
+
+.productPriceContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.productPrice {
+  text-align: left;
+  font-size: 4vh;
+  display: block;
+}
+
+.productCuota {
+  text-align: left;
+  font-size: 2vh;
+  display: block;
+}
+
+.productPaymentMethodContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 1% 2%;
+}
+
+.buttomContainer{
+  /* border: red solid; */
+  margin: 2%;
+}
+
+.buttomContainer button {
+  text-align: center;
+  display: block;
+  margin-top: 1%;
+  width: 100%;
+  font-size: 2vh;
+  font-family: 'Handlee', cursive;
+  font-weight: 900;
+}
+
+.buyButton {
+  background-color: #3483fa;
+  color: white;
+}
+
+.addButton {
+  background-color: rgba(65,137,230,.15);
+  color: #3483fa;
+}
+
+.descriptionContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.descriptionContainer h3 {
+
+}
+
+.questionContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.questionContainer h3 {
+  margin-top: 1%;
+}
+
+.questionContainer input{
+  width: 100%;
+  margin-top: 1%;
+}
+
+.questionContainer h4 {
+  margin-top: 2%;
+}
+
+.ver img {
+  width: 40vh
+}
+
+.imagenProducto {
+  margin-bottom: 5px;
+}
+
+.descriptionContainer p {
+
+}
+
+.question {
+
+}
+
+.reply {
+  color: grey;
+}
+
+
